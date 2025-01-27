@@ -1,0 +1,104 @@
+.l-header {
+    width: 100vw;
+    height: 110px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.l-header__menu-container {
+    width: 1350px;
+    min-width: 800px;
+    max-width: 1350px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.menu-container__title {
+    padding: 5px 10px;
+    
+    font-size: 1.5em;
+    font-family: "fen", sans-serif;
+
+    text-transform: uppercase;
+    letter-spacing: 1px;
+
+    cursor: pointer;
+
+    color: #EFB210;
+}
+
+.menu-container__title:hover.menu-container__title > span {
+    display: inline-block;
+    transform: rotateY(360deg);
+    
+    transition: 1s ease;
+}
+
+.menu-container__title > span {
+    font-family: "dancing", sans-serif;
+}
+
+.menu-container__title > span:last-child {
+    margin-left: 5px;
+}
+
+.navigation__list {
+    display: flex;
+}
+
+.list__section-item + .list__section-item {
+    margin-left: 5px;
+}
+
+.section-item__section-link {
+    padding: 5px 20px;
+
+    display: block;
+    position: relative;
+
+    font-size: 1.2em;
+    font-family: 'arcane', sans-serif;
+
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+
+    color: #EFB210;
+}
+
+.section-item__section-link::after {
+    width: 0;
+    height: 1px;
+
+    position: absolute;
+    left: 0;
+    bottom: 0;
+
+    content: '';
+    
+    background-color: #EFB210;
+
+    transition: width .3s ease;
+}
+
+.section-item__section-link:hover::after {
+    width: 100%;
+}
+
+@font-face {
+    font-family: "dancing";
+    src: url('../../fonts/dancing-vamp.ttf');
+}
+
+@font-face {
+    font-family: "fen";
+    src: url('../../fonts/Fen-2.ttf');
+}
+
+@font-face {
+    font-family: "arcane";
+    src: url('../../fonts/arcane-nine.otf');
+}
