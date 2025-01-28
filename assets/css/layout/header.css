@@ -9,7 +9,7 @@
 
 .l-header__menu-container {
     width: 1350px;
-    min-width: 800px;
+    min-width: 900px;
     max-width: 1350px;
 
     display: flex;
@@ -57,7 +57,7 @@
 .section-item__section-link {
     padding: 5px 20px;
 
-    display: block;
+    display: inline-block;
     position: relative;
 
     font-size: 1.2em;
