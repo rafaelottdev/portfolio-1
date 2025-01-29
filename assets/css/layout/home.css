@@ -6,48 +6,56 @@
     display: flex;
     align-items: center;
     justify-content: center;
-
-    background-color: rgb(15, 15, 15);
 }
 
 .l-home__container {
-    width: 1350px;
-    min-width: 300px;
+    width: 1350px;  
+    min-width: 1120px;
     max-width: 1350px;
-
-    background-color: blue;
 }
 
 .container__info-container {
-    display: flex;
-    /* background-color: purple; */
-}
+    min-width: 1120px;
 
-.info-container__info-text-container {
-    /* background-color: green; */
+    padding-top: 30px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .info-text-container__info-text {
-    /* background-color: aliceblue; */
+    margin-bottom: 20px;
+    padding-top: 30px;
 }
-.info-text__text {
-    width: 600px;
 
-    font-size: 1.9em;
+.info-text__text {
+    max-width: 750px;
+    min-width: 200px;
+
+    font-size: 2.3em;
     font-family: 'cardo', sans-serif;
+    line-height: 1.5em;
 
     color: white;
-    background-color:  aqua;
+}
+
+.info-text__text:first-child {
+    font-size: 1.3em;
+    line-height: 1em;
 }
 
 .info-text__text > span {
-    color: #EFB210  ;
+    color: #EFB210;
 }
 
 .button {
-    padding: 8px 25px;
+    padding: 10px 25px;
 
-    font-size: .9em;
+    cursor: pointer;
+    position: relative;
+
+    font-size: 1em;
     font-family: 'cardo', sans-serif;
     
     text-transform: uppercase;
@@ -57,40 +65,154 @@
     background-color: black;
 }
 
-.info-container__info-project-container {
-    width: 600px;
-    height: 350px;
+.button:hover {
+    color: #EFB210;
+    border: 1px solid #efb31098;
+}
 
-    background-color: red;
-}
 .info-project-container__title {
+    width: 280px;
+    margin-bottom: 20px;
+
+    font-family: 'cardo', sans-serif;
+    font-size: 1.2em;
+
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+
+    color: #EFB210;
 }
+
 .info-project-container__emphasis-container {
+    min-width: 100px;
+    max-width: 600px;
+    height: 330px;
+
+    position: relative;
+
+    border: 1px solid #EFB210;
 }
+
+.info-project-container__emphasis-container:hover .emphasis-container__text-container {
+    width: 100%;
+}
+
 .emphasis-container__image {
-}.container__link-container {
+    width: 100%;
+    height: 100%;
 }
-.link-container__social-container {
-}
-.social-container__social-list {
-}
-.social-list__social-item {
-}
-.social-item__social-link {
-}
-.link-container__work-container {
-}
-.work-container__work-link {
-}
-.work-link__work-container {
-}
+
 .emphasis-container__text-container {
+    width: 0%;
+    height: 100%;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    overflow: hidden;
+
+    color: white;
+    background-color: rgba(0, 0, 0, 0.747);
+
+    transition: .3s ease;
 }
+
 .text-container__emphasis-text {
+    width: 500px;
+
+    font-size: 1.3em;
+    font-family: 'cardo', sans-serif;
+
+    letter-spacing: 1px;
+    line-height: 1.5em;
 }
+
 .text-container__emphasis-button-container {
+    width: 265px;
+    margin-top: 25px;
 }
+
 .emphasis-button-container__button {
+    padding: 5px 30px;
+
+    font-size: 1em;
+    font-family: 'cardo', sans-serif;
+
+    text-transform: uppercase;
+    letter-spacing: 1px;
+
+    color: white;
+    background-color: black;
+}
+
+.emphasis-button-container__button:first-child {
+    margin-right: 20px;
+}
+
+.emphasis-button-container__button:hover {
+    border: 1px solid #EFB210;
+    color: #EFB210;
+}
+
+.container__link-container {
+    padding-top: 90px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.social-container__social-list {
+    display: flex;
+}
+.social-list__social-item + .social-list__social-item {
+    margin-left: 10px;
+}
+
+.social-item__social-link {
+    padding: 3px 5px;
+    display: inline-block;
+
+    fill: white;
+}
+
+.social-item__social-link:hover {
+    fill: #EFB210;
+}
+
+.social-item__social-link > svg {
+    width: 30px;
+}
+
+.work-container__work-link {
+    font-size: 1.1em;
+
+    display: flex;
+    align-items: center;
+
+    letter-spacing: 1px;
+
+    fill: white;
+    color: white;
+}
+
+.work-container__work-link:hover {
+    border-bottom: 1px solid white;
+}
+
+.work-link__work-container {
+    margin-right: 5px;
+}
+
+.work-link__work-container > svg {
+    width: 20px;
 }
 
 svg {
