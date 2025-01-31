@@ -2,10 +2,15 @@
     width: 100vw;
     height: 110px;
 
+    position: fixed;
+    top: 0;
+
     padding-top: 30px;
 
     display: flex;
     justify-content: center;
+
+    z-index: 2;
 }
 
 .l-header__menu-container {
