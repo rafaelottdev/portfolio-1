@@ -4,6 +4,7 @@
 
 @import url('./layout/header.css');
 @import url('./layout/home.css');
+@import url('./layout/about.css');
 
 body {
     background-color: rgb(15, 15, 15);
