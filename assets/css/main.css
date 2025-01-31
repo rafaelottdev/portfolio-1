@@ -5,6 +5,7 @@
 @import url('./layout/header.css');
 @import url('./layout/home.css');
 @import url('./layout/about.css');
+@import url('./layout/services.css');
 
 body {
     padding-top: 110px;
