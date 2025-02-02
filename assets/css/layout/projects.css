@@ -1,0 +1,92 @@
+@charset "UTF-8";
+
+.l-projects {
+    height: 650px;
+
+    display: flex;
+    justify-content: center;
+
+    background-color: blue;
+}
+
+.l-projects__container {
+    width: 1350px;
+    min-width: 1250px;
+    max-width: 1350px;
+    height: 100%;
+
+    padding-top: 30px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background-color: purple;
+}
+
+.container__project-title {
+    font-size: 1.6em;
+    font-family: 'cardo', sans-serif;
+    font-weight: lighter;
+
+    text-transform: uppercase;
+    letter-spacing: 1px;
+
+    color: #EFB210;
+}
+
+.container__project-slide-container {
+    display: flex;
+    
+}
+
+.project-slide-container__left-btn {
+}
+
+.project-slide-container__project-card-container {
+    
+}
+
+.container_project-list {
+    display: flex;
+}
+
+.project-list__card {
+    width: 330px;
+    height: 430px;
+
+    background-color: red;
+}
+
+.project-list__card + .project-list__card {
+}
+
+.item__project-image-container {
+    width: 90%;
+}
+
+.item__project-image-container > img {
+    width: 100%;
+    height: 100%;
+}
+
+.item__project-text-container {
+}
+.item__project-button-container {
+}
+
+.project-slide-container__left-btn svg {
+    fill: white;
+}
+
+.project-slide-container__right-btn {
+    transform: rotateY(190deg);
+}
+
+.project-slide-container__right-btn svg {
+    fill: white;
+}
+
+.container__project-slide-guide {
+}
