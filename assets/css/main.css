@@ -8,6 +8,7 @@
 @import url('./layout/services.css');
 @import url('./layout/projects.css');
 @import url('./layout/skills.css');
+@import url('./layout/contact.css');
 
 body {
     padding-top: 110px;

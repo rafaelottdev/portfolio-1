@@ -41,12 +41,13 @@
     width: 310px;
     height: 350px;
 
-    padding: 30px 9px 0px 9px;
+    padding: 30px 6px 0px 6px;
 
     text-align: center;
 
     color: white;
     background-color: black;
+    border: 1px solid transparent;
 }
 
 .services-item:hover {

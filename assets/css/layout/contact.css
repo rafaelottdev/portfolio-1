@@ -1,0 +1,110 @@
+@charset "UTF-8";
+
+.l-contact {
+    height: 650px;
+
+    display: flex;
+    justify-content: center;
+}
+
+.l-contact__container {
+    width: 1350px;
+    min-width: 1250px;
+    max-width: 1350px;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container__contact-title {
+    margin-bottom: 30px;
+
+    font-size: 1.6em;
+    font-family: 'cardo', sans-serif;
+    font-weight: lighter;
+
+    text-transform: uppercase;
+    letter-spacing: 1px;
+
+    color: #EFB210;
+}
+
+.container__contact-form {
+    color: white;
+}
+
+.contact-form__user-info-container {
+    display: flex;
+
+    margin-bottom: 20px;
+}
+
+.user-info-container__name-container {
+    margin-right: 20px;
+}
+
+.name-container__name, .email-container__email, .services-container__services, .description-container__description {
+    margin-bottom: 10px;
+
+    font-size: 1.2em;
+    font-family: 'cardo', sans-serif;
+    letter-spacing: 1px;
+}
+
+.name-container__input-name, .email-container__input-email, .services-container__input-services, .description-container__input-description {
+    width: 300px;
+    height: 40px;
+
+    padding: 10px;
+
+    font-size: 1.1em;
+    font-family: 'cardo', sans-serif;
+    letter-spacing: 1px;
+
+    border: 1px solid #EFB210;
+    color: white;
+    background-color: transparent;
+}
+
+.contact-form__services-container {
+    margin-bottom: 20px;
+}
+
+.services-container__input-services {
+    width: 620px;
+
+    cursor: pointer;
+}
+
+.contact-form__description-container {
+    margin-bottom: 30px;
+}
+
+.description-container__input-description{
+    width: 620px;
+    height: 200px;
+
+    resize: none;
+}
+
+.container__contact-button {
+    padding: 3px 150px;
+
+    cursor: pointer;
+
+    border-top: 1px solid #EFB210;
+    border-bottom: 1px solid #EFB210;
+    background-color: transparent;
+}
+
+.container__contact-button:hover {
+    border-color: white;
+}
+
+.container__contact-button > svg {
+    width: 25px;
+    fill: #EFB210;
+}

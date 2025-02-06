@@ -50,7 +50,7 @@
 }
 
 .button {
-    padding: 10px 25px;
+    padding: 8px 30px;
 
     cursor: pointer;
     position: relative;
@@ -61,13 +61,14 @@
     text-transform: uppercase;
     letter-spacing: 1px;
 
-    color: white;
-    background-color: black;
+    border-top: 1px solid #EFB210;
+    border-bottom: 1px solid #EFB210;
+    color: #EFB210;
+    background-color: transparent;
 }
 
 .button:hover {
-    color: #EFB210;
-    border: 1px solid #efb31098;
+    border-color: white;
 }
 
 .info-project-container__emphasis-container {
@@ -152,8 +153,10 @@
     text-transform: uppercase;
     letter-spacing: 1px;
 
-    color: white;
-    background-color: black;
+    border-top: 1px solid #EFB210;
+    border-bottom: 1px solid #EFB210;
+    color: #EFB210;
+    background-color: transparent;
 }
 
 .emphasis-button-container__button:first-child {
@@ -161,8 +164,7 @@
 }
 
 .emphasis-button-container__button:hover {
-    border: 1px solid #EFB210;
-    color: #EFB210;
+    border-color: white;
 }
 
 .container__link-container {
