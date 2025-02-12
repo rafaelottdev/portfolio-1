@@ -38,6 +38,10 @@
     color: #EFB210;
 }
 
+.menu-container__title:focus {
+    border-bottom: 2px solid #EFB210;
+}
+
 .menu-container__title:hover.menu-container__title > span {
     display: inline-block;
     transform: rotateY(360deg);
@@ -91,7 +95,7 @@
     transition: width .3s ease;
 }
 
-.section-item__section-link:hover::after {
+.section-item__section-link:hover::after, .section-item__section-link:focus::after {
     width: 100%;
 }
 

@@ -49,7 +49,7 @@
     color: white;
 }
 
-.footer-item__link:hover {
+.footer-item__link:hover, .footer-item__link:focus {
     border-bottom: 1px solid white;
 }
 

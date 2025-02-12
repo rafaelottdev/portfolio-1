@@ -67,7 +67,7 @@
     background-color: transparent;
 }
 
-.button:hover {
+.button:hover, .button:focus {
     border-color: white;
 }
 
@@ -163,7 +163,7 @@
     margin-right: 20px;
 }
 
-.emphasis-button-container__button:hover {
+.emphasis-button-container__button:hover, .emphasis-button-container__button:focus {
     border-color: white;
 }
 
@@ -189,7 +189,7 @@
     fill: white;
 }
 
-.social-item__social-link:hover {
+.social-item__social-link:hover, .social-item__social-link:focus {
     fill: #EFB210;
 }
 
@@ -209,7 +209,7 @@
     color: white;
 }
 
-.work-container__work-link:hover {
+.work-container__work-link:hover, .work-container__work-link:focus {
     border-bottom: 1px solid white;
 }
 

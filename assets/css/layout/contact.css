@@ -100,7 +100,7 @@
     background-color: transparent;
 }
 
-.container__contact-button:hover {
+.container__contact-button:hover, .container__contact-button:focus {
     border-color: white;
 }
 

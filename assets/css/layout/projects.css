@@ -115,7 +115,7 @@
     background-color: transparent;
 }
 
-.item__project-button-container > button:hover {
+.item__project-button-container > button:hover, .item__project-button-container > button:focus {
     border-color: white;
 }
 
@@ -131,7 +131,7 @@
     background-color: transparent;
 }
 
-.project-slide-container__left-btn:hover svg, .project-slide-container__right-btn:hover svg {
+.project-slide-container__left-btn:hover svg, .project-slide-container__right-btn:hover svg, .project-slide-container__left-btn:focus svg, .project-slide-container__right-btn:focus svg {
     fill: #EFB210;
 }
 
