@@ -127,6 +127,8 @@
     padding: 5px;
 
     cursor: pointer;
+
+    background-color: transparent;
 }
 
 .project-slide-container__left-btn:hover svg, .project-slide-container__right-btn:hover svg {
