@@ -41,6 +41,68 @@
 
 .skills-list__item {
     text-align: center;
+    border-bottom: 1px solid transparent;
+
+    position: relative;
+}
+
+.skills-list__item:hover:not(.skills-list__item:last-child) {
+    border-bottom: 1px solid white;
+}
+
+.skills-list__item:hover:not(.skills-list__item:last-child):after {
+    width: 150px;
+    padding: 10px;
+}
+
+.skills-list__item:hover:nth-child(1)::after {
+    content: 'Saiba o que estudei em HTML'
+}
+.skills-list__item:hover:nth-child(2)::after {
+    content: 'Saiba o que estudei em CSS'
+}
+
+.skills-list__item:hover:nth-child(3)::after {
+    content: 'Saiba o que estudei em JavaScript'
+}
+
+.skills-list__item:hover:nth-child(4):after {
+    content: 'Saiba o que estudei em GIT'
+}
+
+.skills-list__item::after {
+    content: '';
+
+    width: 0px;
+    height: 30px;
+
+    position: absolute;
+    top: 0px;
+    left: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-family: 'cardo', sans-serif;
+    letter-spacing: 1px;
+
+    border-radius: 5px;
+
+    background-color: black;
+    color: white;
+}
+
+.skills-list__item:nth-child(3):after {
+    left: 80%;
+}
+
+.skills-list__item > a {
+    display: inline-block;
+}
+
+.skills-list__item > a:focus {
+    border-bottom: 1px solid white;
 }
 
 .item__icon-container {

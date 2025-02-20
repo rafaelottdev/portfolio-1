@@ -80,6 +80,7 @@
 
 .item__project-image-container {
     width: 100%;
+    height: 150px;
 }
 
 .item__project-image-container > img {
@@ -100,7 +101,7 @@
     margin-top: 30px;
 }
 
-.item__project-button-container > button {
+.item__project-button-container > a {
     padding: 6px 30px;
 
     text-transform: uppercase;
@@ -115,11 +116,11 @@
     background-color: transparent;
 }
 
-.item__project-button-container > button:hover, .item__project-button-container > button:focus {
+.item__project-button-container > a:hover, .item__project-button-container > a:focus {
     border-color: white;
 }
 
-.item__project-button-container > button:last-child {
+.item__project-button-container > a:last-child {
     margin-left: 10px;
 }
 
