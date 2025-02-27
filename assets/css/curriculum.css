@@ -1,0 +1,115 @@
+@charset "UTF-8";
+
+body {
+    overflow-x: hidden;
+}
+
+a {
+    display: block;
+    color: black;
+}
+
+.l-main {
+    width: 100vw;
+
+    position: relative;
+    display: flex;
+    justify-content: center;
+
+    background-color: rgba(20, 20, 20, 0.877);
+}
+
+.l-main__content-container {
+    width: 1350px;
+    min-width: 1120px;
+    max-width: 1350px;
+    height: 100%;
+
+    padding: 30px 0px 0px 0px;
+
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.content-container__back-link, .content-container__download-link {
+    width: 110px;
+    height: 30px;
+
+    margin-top: 100px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-family: 'cardo', sans-serif;
+    letter-spacing: 1px;
+    line-height: 1.5em;
+    font-weight: bold;
+
+    background-color: white;
+}
+
+.content-container__curriculum-container {
+    width: 800px;
+
+    padding: 30px;
+    letter-spacing: 1px;
+    font-family: sans-serif;
+
+    background-color: white;
+}
+
+.curriculum-container__header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.curriculum-container__header > h1 {
+    font-size: 2.3em;
+}
+
+.curriculum-container__header > p {
+    font-size: 1.2em;
+}
+
+.main__curriculum-section + .main__curriculum-section {
+    margin-top: 25px;
+}
+
+.curriculum-section-1__container, .curriculum-section-2__container, .curriculum-section-3__container, .curriculum-section-4__container, .curriculum-section-5__container, .curriculum-section-6__container {
+    padding-left: 30px;
+    padding-top: 10px;
+}
+
+.curriculum-section-1__container > p + p {
+    margin-top: 10px;
+}
+
+.curriculum-section-2__container > a {
+    text-decoration: underline;
+}
+
+.curriculum-section-2__container > a + a {
+    margin-top: 10px;
+}
+
+.container__project-container {
+    padding-top: 10px;
+    padding-left: 30px;
+}
+
+.project-container__link-container {
+    margin-bottom: 15px;
+}
+
+.project-container__link-container > a {
+    text-decoration: underline;
+}
+
+.project-container__link-container > a + a {
+    margin-top: 10px;
+}
+
+.curriculum-section-6__container > p + p {
+    margin-top: 10px;
+}

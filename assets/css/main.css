@@ -21,3 +21,7 @@ body {
 span {
     color: #EFB210;
 }
+
+main {
+    display: none;
+}

@@ -3,7 +3,7 @@
 .l-footer {
     height: 200px;
 
-    display: flex;
+    display: none;
     justify-content: center;
 }
 

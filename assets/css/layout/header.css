@@ -19,6 +19,8 @@
     min-width: 900px;
     max-width: 1350px;
 
+    position: relative;
+
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -55,6 +57,10 @@
 
 .menu-container__title > span:last-child {
     margin-left: 5px;
+}
+
+.menu-hamb-btn {
+    display: none;
 }
 
 .navigation__list {
@@ -112,4 +118,63 @@
 @font-face {
     font-family: "arcane";
     src: url('../../fonts/arcane-nine.otf');
+}
+
+@media (max-width: 886px) {
+    .l-header__menu-container {
+        /* background-color: red;     */
+        padding-right: 50px;
+        min-width: 0px;
+    }
+
+    .menu-container__navigation {
+        
+    }
+
+    .menu-hamb-btn {
+        display: block;
+
+        position: absolute;
+        top: 30px;
+        right: 50px;
+
+        background-color: transparent;
+
+        z-index: 1;
+    }
+
+    .menu-hamb-btn > svg {
+        /* width: 20px; */
+        fill: #EFB210;
+    }
+
+    .navigation__list {
+        width: 250px;
+        height: 100vh;
+
+        position: absolute;
+        top: 0px;
+        right: 0px;
+
+        padding-top: 80px;
+
+        display: none;
+        flex-direction: column;
+        /* justify-content: center; */
+
+        background-color: black;
+
+        z-index: -1;
+    }
+
+    .list__section-item {
+        padding: 10px 0px;
+        text-align: center;
+        /* background-color: red; */
+    }
+
+    .list__section-item + .list__section-item {
+        margin-left: 0px;
+        margin-top: 3px;
+    }
 }
