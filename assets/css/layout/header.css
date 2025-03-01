@@ -165,7 +165,7 @@
     }
 
     .navigation__list {
-        width: 250px;
+        width: 200px;
         height: 100vh;
 
         position: absolute;
@@ -195,3 +195,5 @@
         margin-top: 40px;
     }
 }
+
+/* só aparece a animação do menu quando clico diretamente nas letras / tamanho das letras */
