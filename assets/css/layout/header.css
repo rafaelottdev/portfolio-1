@@ -143,8 +143,8 @@
         display: block;
 
         position: absolute;
-        top: 40px;
-        right: 50px;
+        top: 45px; /* right: 83px; */
+        right: 30px;
 
         cursor: pointer;
 
@@ -154,7 +154,7 @@
     }
 
     .menu-hamb-btn > div {
-        width: 35px;
+        width: 30px;
         height: 1.5px;
 
         background-color: #EFB210;
@@ -173,7 +173,7 @@
     }
 
     .menu-hamb-btn > div + div {
-        margin-top: 8px;
+        margin-top: 7px;
     }
 
     .navigation__list {
@@ -182,13 +182,11 @@
 
         position: absolute;
         top: 0px;
-        right: 0px;
+        right: -200px;
 
         padding-top: 100px;
 
-        /* display: none; */
         flex-direction: column;
-        /* justify-content: center; */
 
         background-color: black;
 
@@ -201,7 +199,7 @@
         text-align: center;
         font-size: .9em;
 
-        background-color: red;
+        /* background-color: red; */
     }
 
     .list__section-item + .list__section-item {
@@ -217,7 +215,7 @@
         align-items: center;
         justify-content: center;
 
-        background-color: blue;
+        /* background-color: blue; */
     }
 }
 
