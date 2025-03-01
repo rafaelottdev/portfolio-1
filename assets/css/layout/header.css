@@ -130,20 +130,15 @@
     }
     
     .l-header__menu-container {
-        /* background-color: red;     */
         padding-right: 50px;
         min-width: 0px;
-    }
-
-    .menu-container__navigation {
-        
     }
 
     .menu-hamb-btn {
         display: block;
 
         position: absolute;
-        top: 48px; /* right: 83px; */
+        top: 48px;
         right: 30px;
 
         cursor: pointer;
@@ -151,6 +146,8 @@
         background-color: transparent;
 
         z-index: 1;
+
+        transition: right .2s;
     }
 
     .menu-hamb-btn > div {
@@ -158,18 +155,6 @@
         height: 1.5px;
 
         background-color: #EFB210;
-    }
-
-    .menu-transform:nth-child(1) {
-        transform: translate(0px, 9px) rotate(40deg);
-    }
-
-    .menu-transform:nth-child(2) {
-        display: none;
-    }
-
-    .menu-transform:nth-child(3) {
-        transform: rotate(-44deg);
     }
 
     .menu-hamb-btn > div + div {
@@ -191,6 +176,8 @@
         background-color: black;
 
         z-index: -1;
+
+        transition: right .2s;
     }
 
     .list__section-item {
@@ -198,8 +185,6 @@
 
         text-align: center;
         font-size: .9em;
-
-        /* background-color: red; */
     }
 
     .list__section-item + .list__section-item {
@@ -214,9 +199,29 @@
         display: flex;
         align-items: center;
         justify-content: center;
+    }
 
-        /* background-color: blue; */
+    /* ---------------------- */
+
+    .menu-transform:nth-child(1) {
+        transform: translate(0px, 9px) rotate(40deg);
+        transition: transform .2s;
+    }
+
+    .menu-transform:nth-child(2) {
+        display: none;
+    }
+
+    .menu-transform:nth-child(3) {
+        transform: rotate(-44deg);
+        transition: transform .2s;
+    }
+
+    .show-menu {
+        right: 0px;
+    }
+
+    .center-menu-icon {
+        right: 83px;
     }
 }
-
-/* só aparece a animação do menu quando clico diretamente nas letras / tamanho das letras */
