@@ -130,8 +130,8 @@
     }
     
     .l-header__menu-container {
-        padding-right: 50px;
         min-width: 0px;
+        padding-right: 50px;
     }
 
     .menu-hamb-btn {
