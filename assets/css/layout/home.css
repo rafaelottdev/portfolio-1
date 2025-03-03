@@ -232,7 +232,7 @@ svg {
 
 @media (max-width: 886px) {
     .l-home {
-        height: 75vh;
+        height: 60vh;
         flex-direction: column;
 
         /* background-color: green; */
@@ -310,6 +310,11 @@ svg {
     }
 
     .work-container__work-link {
+        font-size: 1em
         /* background-color: aqua; */
+    }
+
+    .work-link__work-container > svg {
+        width: 15px;
     }
 }
