@@ -232,10 +232,10 @@ svg {
 
 @media (max-width: 886px) {
     .l-home {
-        height: 55vh;
+        height: 74vh;
         flex-direction: column;
 
-        margin-bottom: 150px;
+        margin-bottom: 80px;
     }
 
     .l-home__container {
