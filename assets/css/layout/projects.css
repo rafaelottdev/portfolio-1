@@ -182,9 +182,27 @@
         font-size: 1.4em;
     }
 
+    .container__project-slide-container {
+        padding-left: 40px;
+    }
+
+    .project-list__card {
+        width: 280px;
+        height: 430px;
+    
+        padding: 15px 10px 0px 10px;
+    }
 
     .project-slide-container__project-card-container {
-        width: 370px;
+        width: 325px;
+    }
+
+    .item__project-text-container {
+        font-size: 1em;
+    }
+
+    .item__project-button-container > a {
+        font-size: .9em;
     }
     
 }
