@@ -99,8 +99,6 @@
     .container__services-list {
         flex-direction: column;
         align-items: center;
-
-        /* background-color: red; */
     }
 
     .services-item + .services-item {

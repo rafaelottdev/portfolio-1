@@ -171,3 +171,20 @@
 
     background-color: #EFB210;
 }
+
+@media (max-width: 886px) {
+    .l-projects {
+        height: 100%;
+    }
+    
+    .container__project-title {
+        margin-bottom: 30px;
+        font-size: 1.4em;
+    }
+
+
+    .project-slide-container__project-card-container {
+        width: 370px;
+    }
+    
+}
