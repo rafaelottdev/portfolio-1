@@ -79,6 +79,8 @@
 @media (max-width: 886px) {
     .l-about {
         height: 100%;
+
+        margin-bottom: 80px;
     }
 
     .l-about__container {
@@ -90,26 +92,19 @@
 
     .container__about-text-container {
         margin-bottom: 30px;
-        /* background-color: red; */
     }
 
     .about-me__title {
-        margin-bottom: 5px;
-    
         font-size: 1.4em;
     }
 
     .container__about-text-container {
         width: 97%;
-
-        /* background-color: blue; */
     }
 
     .about-me__text, .whats-coming__text {
         font-size: 1.1em;
         text-align: center;
-
-        /* background-color: red; */
     }
 
     .whats-coming__title {
@@ -121,7 +116,5 @@
         height: 300px;
 
         display: block;
-
-        /* background-color: red; */
     }
 }

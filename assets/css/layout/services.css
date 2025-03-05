@@ -80,3 +80,34 @@
 .services-item__text + .services-item__text {
     margin-top: 20px;
 }
+
+@media (max-width: 886px) {
+    .l-services {
+        height: 100%;
+    }
+    
+    .l-services__container {
+        min-width: 0px;
+    }
+    
+    .container__services-title {
+        margin-bottom: 20px;
+        font-size: 1.4em;
+        text-align: center;
+    }
+    
+    .container__services-list {
+        flex-direction: column;
+        align-items: center;
+
+        /* background-color: red; */
+    }
+    
+    .services-item {
+        width: 310px;
+        height: 350px;
+
+        margin-bottom: 10px;
+        padding: 30px 6px 0px 6px;
+    }
+}
