@@ -102,12 +102,8 @@
 
         /* background-color: red; */
     }
-    
-    .services-item {
-        width: 310px;
-        height: 350px;
 
-        margin-bottom: 10px;
-        padding: 30px 6px 0px 6px;
+    .services-item + .services-item {
+        margin-top: 20px;
     }
 }
