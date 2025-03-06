@@ -175,6 +175,8 @@
 @media (max-width: 886px) {
     .l-projects {
         height: 100%;
+
+        margin-bottom: 50px;
     }
     
     .container__project-title {
