@@ -107,4 +107,8 @@
     .l-footer__text-container {
         text-align: center;
     }
+
+    .footer-item__link:hover, .footer-item__link:focus {
+        border-bottom: 1px solid transparent;
+    }
 }
