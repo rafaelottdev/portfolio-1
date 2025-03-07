@@ -93,7 +93,7 @@
     
     .l-footer__list {
         padding-left: 50px;
-        flex-direction: column;
+        display: grid;
     }
     
     .list__footer-item + .list__footer-item {
