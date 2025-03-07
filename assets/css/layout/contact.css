@@ -69,6 +69,10 @@
     background-color: transparent;
 }
 
+.name-container__input-name:focus, .email-container__input-email:focus, .services-container__input-services:focus, .description-container__input-description:focus {
+    border-color: white;
+}
+
 .contact-form__services-container {
     margin-bottom: 20px;
 }
@@ -158,5 +162,9 @@
 
     .container__contact-button > svg {
         width: 20px;
+    }
+
+    .container__contact-button:hover, .container__contact-button:focus {
+        border-color: #EFB210;
     }
 }
