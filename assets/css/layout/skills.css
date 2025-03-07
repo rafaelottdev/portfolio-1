@@ -143,4 +143,20 @@
     .skills-list__item + .skills-list__item {
         margin-top: 30px;
     }
+
+    .skills-list__item:hover:not(.skills-list__item:last-child) {
+        border-bottom: 1px solid transparent;
+    }
+    
+    .skills-list__item:hover:not(.skills-list__item:last-child):after {
+        width: 0px;
+    }
+    
+    .skills-list__item:hover:nth-child(1)::after, .skills-list__item:hover:nth-child(2)::after, .skills-list__item:hover:nth-child(3)::after, .skills-list__item:hover:nth-child(4):after {
+        content: ''
+    }
+
+    .skills-list__item > a {
+        border-bottom: 1px solid white;
+    }
 }

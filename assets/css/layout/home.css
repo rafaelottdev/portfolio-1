@@ -303,4 +303,24 @@ svg {
     .work-link__work-container > svg {
         width: 15px;
     }
+
+    
+    .button:hover, .button:focus {
+        border-color: #EFB210;
+    }
+    .info-project-container__emphasis-container:hover .emphasis-container__text-container {
+        width: 0%;
+    }
+
+    .emphasis-button-container__button:hover, .emphasis-button-container__button:focus {
+        border-color: #EFB210;
+    }
+
+    .social-item__social-link:hover, .social-item__social-link:focus {
+        fill: white;
+    }
+
+    .work-container__work-link:hover, .work-container__work-link:focus {
+        border-bottom: 1px solid transparent;
+    }
 }

@@ -104,4 +104,8 @@
     .services-item + .services-item {
         margin-top: 20px;
     }
+
+    .services-item:hover, .services-item:focus {
+        border: 1px solid transparent;
+    }
 }

@@ -128,6 +128,14 @@
     .menu-container__title  {
         font-size: 1em;
     }
+
+    .menu-container__title:focus {
+        border-bottom: 2px solid transparent;
+    }
+    
+    .menu-container__title:hover.menu-container__title > span {
+        transform: none;
+    }
     
     .l-header__menu-container {
         min-width: 0px;
@@ -199,6 +207,10 @@
         display: flex;
         align-items: center;
         justify-content: center;
+    }
+
+    .section-item__section-link:hover::after, .section-item__section-link:focus::after {
+        width: 0%;
     }
 
     /* ---------------------- */
