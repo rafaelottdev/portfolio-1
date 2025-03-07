@@ -83,7 +83,7 @@
     margin-bottom: 30px;
 }
 
-.description-container__input-description{
+.description-container__input-description {
     width: 620px;
     height: 200px;
 
@@ -148,6 +148,10 @@
         font-size: 1.1em;
     }
 
+    .description-container__input-description {
+        height: 200px;
+    }
+
     .container__contact-button {
         padding: 3px 75px;
     }
@@ -156,3 +160,4 @@
         width: 20px;
     }
 }
+/* só o tamanho do input do descrição, dps pode ir para o rodape */
