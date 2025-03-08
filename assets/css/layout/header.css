@@ -105,6 +105,14 @@
     width: 100%;
 }
 
+/* ------------------------ */
+
+.scrolling {
+    background-color: black;
+}
+
+/* ------------------------ */
+
 @font-face {
     font-family: "dancing";
     src: url('../../fonts/dancing-vamp.ttf');
