@@ -1,5 +1,7 @@
 const headerTitle = document.querySelector('.menu-container__title')
 const sectionList = [... document.querySelectorAll('.list__section-item')]
+const exploreBtn = document.querySelector('.button')
+const workToguetherBtn = document.querySelector('.work-container__work-link')
 
 function scrollingToAbout() {
     window.scrollTo({top: 550, left: 0, behavior: "smooth"})
@@ -59,3 +61,6 @@ headerTitle.addEventListener('click', scrollingToHome)
 sectionList.forEach((sectionItem) => {
     sectionItem.addEventListener('click', sectionVerify)
 })
+
+exploreBtn.addEventListener('click',  scrollingToAbout)
+workToguetherBtn.addEventListener('click', scrollingToContact)

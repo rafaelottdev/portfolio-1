@@ -5,7 +5,7 @@ function unFocus(event) {
 
     currentElement.blur()
 
-    if(currentElement.className == 'services-item__text' || currentElement.className.animVal == 'svg-btn') {
+    if(currentElement.className == 'services-item__text' || currentElement.className == 'services-item__title' || currentElement.className.animVal == 'svg-btn') {
         const currentElementFather = currentElement.parentNode
 
         currentElementFather.blur()
