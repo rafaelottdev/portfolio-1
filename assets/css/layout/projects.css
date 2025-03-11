@@ -56,6 +56,8 @@
     top: 0;
 
     display: flex;
+
+    transition: .5s ease-in;
 }
 
 .project-list__card {

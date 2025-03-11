@@ -1,6 +1,6 @@
 const slideBtnList = [... document.querySelectorAll('.slide-btn')]
 
-let currentSlideValue = 350
+let currentSlideValue = 0
 
 function getClassBtn(event) {
     const btn = event.target
@@ -17,16 +17,35 @@ function getClassBtn(event) {
     return btnClass = btnClassList.split(" ")[0]
 }
 
+function slideToLeft(listElement, cardList) {
+    console.log(cardList)
+    if(cardList.length > 3) {
+        currentSlideValue += 350
+
+        listElement.style.left = `${currentSlideValue}px`
+    }
+}
+
+function slideToRight(listElement, cardList) {
+    if(cardList.length > 3) {
+        currentSlideValue -= 350
+
+        listElement.style.left = `${currentSlideValue}px`
+    }
+}
+
 function whatBtn(clickedClass) {
+    const projectList = document.querySelector('.container_project-list')
+    const cardList = [... document.querySelectorAll('.project-list__card')]
     let btnSide = ""
 
     switch (clickedClass) {
         case "project-slide-container__left-btn":
-            btnSide = 'esquerdo'
+            slideToLeft(projectList, cardList)
             break
     
         case "project-slide-container__right-btn":
-            btnSide = 'direito'
+            slideToRight(projectList, cardList)
             break
     }
 
@@ -36,11 +55,9 @@ function whatBtn(clickedClass) {
 function clickedButton(event) {
     const clickedClass = getClassBtn(event)
 
-    const btn = whatBtn(clickedClass)
+    whatBtn(clickedClass)
 }
 
 slideBtnList.forEach((btn) => {
     btn.addEventListener('click',clickedButton)
 })
-
-// const projectList = document.querySelector('.container_project-list')
