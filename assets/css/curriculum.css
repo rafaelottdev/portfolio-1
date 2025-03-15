@@ -31,7 +31,7 @@ a {
     justify-content: space-evenly;
 }
 
-.content-container__back-link, .content-container__download-link {
+.content-container__back-link > a, .content-container__download-link > a {
     width: 110px;
     height: 30px;
 
