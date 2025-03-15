@@ -363,23 +363,23 @@
             <div class="l-contact__container">
                 <h2 class="container__contact-title">Fale Comigo</h2>
 
-                <form class="container__contact-form">
+                <form action="https://formsubmit.co/rafaelottdev@gmail.com" method="POST" class="container__contact-form">
                     <div class="contact-form__user-info-container">
                         <div class="user-info-container__name-container">
                             <p class="name-container__name">Nome</p>
-                            <input type="text" name="" id="" class="name-container__input-name" placeholder="Escreva Seu nome Completo" aria-label="espaço no formulario para colocar o nome completo">
+                            <input type="text" name="name" autocomplete="off" class="name-container__input-name" placeholder="Escreva Seu nome Completo" aria-label="espaço no formulario para colocar o nome completo">
                         </div>
 
                         <div class="user-info-container__email-container">
                             <p class="email-container__email">Email</p>
-                            <input type="email" name="" id="" class="email-container__input-email" placeholder="Escreva seu Email" aria-label="espaço no formulario para colocar o email">
+                            <input type="email" name="email" autocomplete="off" class="email-container__input-email" placeholder="Escreva seu Email" aria-label="espaço no formulario para colocar o email">
                         </div>
                     </div>
 
                     <div class="contact-form__services-container">
                         <p class="services-container__services">Serviços</p>
 
-                        <input type="text" name="" id="" list="services-options" class="services-container__input-services" placeholder="Escolha uma das opções" aria-label="espaço no formulario para colocar um tipo de serviço">
+                        <input type="text" name="_subject" id="" list="services-options" class="services-container__input-services" placeholder="Escolha uma das opções" aria-label="espaço no formulario para colocar um tipo de serviço">
                         <datalist id="services-options" class="services-container__options-list">
                             <option value="Preciso de uma landing page"></option>
                             <option value="Preciso de um site"></option>
@@ -390,15 +390,17 @@
 
                     <div class="contact-form__description-container">
                         <p class="description-container__description">Descrição</p>
-                        <textarea name="" id="" class="description-container__input-description" placeholder="Faça uma descrição" maxlength="405" aria-label="espaço no formulario para colocar uma descrição mais detalhada"></textarea>
+                        <textarea name="message" autocomplete="off" class="description-container__input-description" placeholder="Faça uma descrição" maxlength="405" aria-label="espaço no formulario para colocar uma descrição mais detalhada"></textarea>
                     </div>
-                </form>
 
-                <button class="container__contact-button focused-element" aria-label="botão que envia o formulario para o email de rafael ott" tabindex="0">
-                    <svg viewBox="0 -2.5 20 20">
-                        <path d="M10 12.474 0 3.649V15h20V3.649zm.001-2.662L0 .981V0h20v.981z"/>
-                    </svg>
-                </button>
+                    <input type="hidden" name="_next" value="http://127.0.0.1:5500/thanks-page.html">
+
+                    <button type="submit" class="container__contact-button focused-element" aria-label="botão que envia o formulario para o email de rafael ott" tabindex="0">
+                        <svg viewBox="0 -2.5 20 20">
+                            <path d="M10 12.474 0 3.649V15h20V3.649zm.001-2.662L0 .981V0h20v.981z"/>
+                        </svg>
+                    </button>
+                </form>
             </div>
         </section>
     </main>
@@ -471,7 +473,7 @@
     <script src="./assets/js/header-background.js"></script>
     <script src="./assets/js/scrolling-to-section.js"></script>
     <script src="./assets/js/services.js"></script>
-    <script src="./assets/js/project-slide.js"></script>
+    <script src="./assets/js/sendEmail.js"></script>
 
     <script src="./assets/js/disable-focus.js"></script>
     <script src="./assets/js/mobile/menu.js"></script>

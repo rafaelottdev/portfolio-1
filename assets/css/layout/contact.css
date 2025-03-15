@@ -36,6 +36,10 @@
 
 .container__contact-form {
     color: white;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .contact-form__user-info-container {
