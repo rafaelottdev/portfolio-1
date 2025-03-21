@@ -3,45 +3,31 @@ const sectionList = [... document.querySelectorAll('.list__section-item')]
 const exploreBtn = document.querySelector('.button')
 const workToguetherBtn = document.querySelector('.work-container__work-link')
 
-function scrollingToAbout(widthSize) {
-    if (widthSize < 930) {
-        window.scrollTo({top: 520, left: 0, behavior: "smooth"})
-        console.log('ativou')
-    }
+const titleList = [... document.querySelectorAll('.section-title')]
+const titlePositionList = []
 
-    else {
-        window.scrollTo({top: 550, left: 0, behavior: "smooth"})
-    }
+titleList.forEach((title) => {
+    titlePositionList.push(title.getBoundingClientRect().y - 130)
+})
+
+function scrollingToAbout() {
+    window.scrollTo({top: titlePositionList[0], left: 0, behavior: "smooth"})
 }
 
-function scrollingToServices(widthSize) {
-    if (widthSize < 930 && widthSize > 561) {
-        window.scrollTo({top: 1170, left: 0, behavior: "smooth"})
-    }
-
-    else if (widthSize < 560 && widthSize > 400) {
-        window.scrollTo({top: 1200, left: 0, behavior: "smooth"})
-    }
-
-    else if (widthSize < 399) {
-        window.scrollTo({top: 1280, left: 0, behavior: "smooth"})
-    }
-
-    else {
-        window.scrollTo({top: 1070, left: 0, behavior: "smooth"})
-    }
+function scrollingToServices() {
+    window.scrollTo({top: titlePositionList[1], left: 0, behavior: "smooth"})
 }
 
-function scrollingToProjects(widthSize) {
-    window.scrollTo({top: 1640, left: 0, behavior: "smooth"})
+function scrollingToProjects() {
+    window.scrollTo({top: titlePositionList[2], left: 0, behavior: "smooth"})
 }
 
-function scrollingToSkills(widthSize) {
-    window.scrollTo({top: 2200, left: 0, behavior: "smooth"})
+function scrollingToSkills() {
+    window.scrollTo({top: titlePositionList[3], left: 0, behavior: "smooth"})
 }
 
-function scrollingToContact(widthSize) {
-    window.scrollTo({top: 2570, left: 0, behavior: "smooth"})
+function scrollingToContact() {
+    window.scrollTo({top: titlePositionList[4], left: 0, behavior: "smooth"})
 }
 
 function scrollingToHome() {
@@ -54,27 +40,25 @@ function sectionVerify(event) {
     const currentSection = event.target
     const currentSectionContent = currentSection.innerHTML
 
-    const widthSize = window.innerWidth
-
     switch (currentSectionContent) {
         case "Sobre":
-            scrollingToAbout(widthSize)
+            scrollingToAbout()
             break
 
         case "Serviços":
-            scrollingToServices(widthSize)
+            scrollingToServices()
             break
         
         case "Projetos":
-            scrollingToProjects(widthSize)
+            scrollingToProjects()
             break
 
         case "Habilidades":
-            scrollingToSkills(widthSize)
+            scrollingToSkills()
             break
 
         case "Contato":
-            scrollingToContact(widthSize)
+            scrollingToContact()
             break
     }
 }

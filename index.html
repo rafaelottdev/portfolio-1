@@ -34,23 +34,23 @@
 
                 <ul class="navigation__list">
                     <li class="list__section-item focused-element">
-                        <a href="#" class="section-item__section-link" aria-label="Link que leva para a seção sobre do site">Sobre</a>
+                        <a href="#about" class="section-item__section-link" aria-label="Link que leva para a seção sobre do site">Sobre</a>
                     </li>
 
                     <li class="list__section-item focused-element">
-                        <a href="#" class="section-item__section-link" aria-label="Link que leva para a seção serviços do site">Serviços</a>
+                        <a href="#services" class="section-item__section-link" aria-label="Link que leva para a seção serviços do site">Serviços</a>
                     </li>
 
                     <li class="list__section-item focused-element">
-                        <a href="#" class="section-item__section-link" aria-label="Link que leva para a seção projetos do site">Projetos</a>
+                        <a href="#projects" class="section-item__section-link" aria-label="Link que leva para a seção projetos do site">Projetos</a>
                     </li>
 
                     <li class="list__section-item focused-element">
-                        <a href="#" class="section-item__section-link" aria-label="Link que leva para a seção habilidades do site">Habilidades</a>
+                        <a href="#skills" class="section-item__section-link" aria-label="Link que leva para a seção habilidades do site">Habilidades</a>
                     </li>
 
                     <li class="list__section-item focused-element">
-                        <a href="#" class="section-item__section-link" aria-label="Link que leva para a seção contato do site">Contato</a>
+                        <a href="#contact" class="section-item__section-link" aria-label="Link que leva para a seção contato do site">Contato</a>
                     </li>
                 </ul>   
             </nav>
@@ -139,11 +139,11 @@
             </div>
         </section>
 
-        <section class="l-about">
+        <section class="l-about" id="about">
             <div class="l-about__container">
                 <section class="container__about-text-container">
                     <div class="about-text-container__about-me">
-                        <h2 class="about-me__title">Sobre Mim</h2>
+                        <h2 class="about-me__title section-title">Sobre Mim</h2>
 
                         <p class="about-me__text">Estudo faz  2 anos, comecei em 2023 apenas por curiosidade e acabei me apaixonando por esse mundo de frustrações e realizações.</p>
 
@@ -163,9 +163,9 @@
             </div>
         </section>
 
-        <section class="l-services">
+        <section class="l-services" id="services">
             <div class="l-services__container">
-                <h2 class="container__services-title">O que eu posso fazer por você</h2>
+                <h2 class="container__services-title section-title">O que eu posso fazer por você</h2>
 
                 <ul class="container__services-list">
                     <li class="services-item focused-element landing-page-service" aria-label="Card que seleciona o serviço de criação de landing pages" tabindex="0">
@@ -201,9 +201,9 @@
             </div>
         </section>
 
-        <section class="l-projects">
+        <section class="l-projects" id="projects">
             <div class="l-projects__container">
-                <h2 class="container__project-title">Meus Projetos</h2>
+                <h2 class="container__project-title section-title">Meus Projetos</h2>
 
                 <div class="container__project-slide-container">
                     <button class="project-slide-container__left-btn slide-btn focused-element" tabindex="0">
@@ -281,9 +281,9 @@
             </div>
         </section>
 
-        <section class="l-skills">
+        <section class="l-skills" id="skills">
             <div class="l-skills__container">
-                <h2 class="container__skills-title">Minhas Habilidades</h2>
+                <h2 class="container__skills-title section-title">Minhas Habilidades</h2>
 
                 <ul class="container__skills-list">
                     <li class="skills-list__item" aria-label="Link que leva para meus estudos em html no github">
@@ -359,9 +359,9 @@
             </div>
         </section>
 
-        <section class="l-contact">
+        <section class="l-contact" id="contact">
             <div class="l-contact__container">
-                <h2 class="container__contact-title">Fale Comigo</h2>
+                <h2 class="container__contact-title section-title">Fale Comigo</h2>
 
                 <form action="https://formsubmit.co/rafaelottdev@gmail.com" method="POST" class="container__contact-form">
                     <div class="contact-form__user-info-container">
@@ -470,8 +470,9 @@
         </div>
     </footer>
 
+    <script src="./assets/js/toTopReload.js"></script>
+
     <script src="./assets/js/header-background.js"></script>
-    <script src="./assets/js/scrolling-to-section.js"></script>
     <script src="./assets/js/services.js"></script>
 
     <script src="./assets/js/disable-focus.js"></script>
@@ -483,4 +484,3 @@
 <!-- melhorar o repo do portfolio -->
 <!-- Refarorar a altura, em monitores maior ta assim, só a home e o espaço vertical entre a home e o sobre (tao mt grande) -->
 <!-- O focus n ta saindo dos icones de github, linkedin e curriculo, nem das minhas habilidades (talvez pq é um link que vai pra fora), do footer tbm n sai-->
- 

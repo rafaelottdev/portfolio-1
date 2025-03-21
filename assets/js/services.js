@@ -1,6 +1,6 @@
 const servicesList = [... document.querySelectorAll('.services-item')]
 
-function scrollingToContact() {
+function scrollingToContactService() {
     window.scrollTo({top: 2570, left: 0, behavior: "smooth"})
 }
 
@@ -28,28 +28,28 @@ function checkSelectedService(serviceEvent) {
         case "landing-page-service":
             serviceText = "Preciso de uma landing page"
 
-            scrollingToContact()
+            scrollingToContactService()
             serviceSelected(serviceText)
             break
 
         case "site-service":
             serviceText = "Preciso de um site"
             
-            scrollingToContact()
+            scrollingToContactService()
             serviceSelected(serviceText)
             break
 
         case "portfolio-service":
             serviceText = "Preciso de um portfolio"
 
-            scrollingToContact()
+            scrollingToContactService()
             serviceSelected(serviceText)
             break
 
         case "seo-service":
             serviceText = "Quero melhorar meu SEO"
 
-            scrollingToContact()
+            scrollingToContactService()
             serviceSelected(serviceText)
             break
     }
