@@ -187,7 +187,7 @@
     }
 
     .container__project-slide-container {
-        padding-left: 40px;
+        padding-left: 485px;
     }
 
     .project-list__card {
@@ -195,7 +195,7 @@
     }
 
     .project-slide-container__project-card-container {
-        width: 325px;
+        width: 100%;
     }
 
     .item__project-text-container {
