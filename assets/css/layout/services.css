@@ -75,6 +75,8 @@
     
     letter-spacing: 1px;
     line-height: 1.5em;
+
+    color: white;
 }
 
 .services-item__text + .services-item__text {

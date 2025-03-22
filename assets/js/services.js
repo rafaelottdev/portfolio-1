@@ -1,7 +1,19 @@
 const servicesList = [... document.querySelectorAll('.services-item')]
 
 function scrollingToContactService() {
-    window.scrollTo({top: 2570, left: 0, behavior: "smooth"})
+    const windowWidth = window.innerWidth
+
+    if(windowWidth < 800 && windowWidth > 400) {
+        window.scrollTo({top: 4050, left: 0, behavior: "smooth"})
+    }
+
+    else if(windowWidth < 399) {
+        window.scrollTo({top: 4300, left: 0, behavior: "smooth"})
+    }
+
+    else {
+        window.scrollTo({top: 2570, left: 0, behavior: "smooth"})
+    }
 }
 
 function serviceSelected(service) {
@@ -19,7 +31,7 @@ function checkSelectedService(serviceEvent) {
     let serviceText = ""
 
     if(currentServiceClassName == 'services-item__text' || currentServiceClassName == 'services-item__title') {
-        const currentElementFather = currentService.parentNode
+        const currentElementFather = currentService.parentNode.parentNode
 
         serviceClassName = currentElementFather.className.split(" ")[2]
     }
